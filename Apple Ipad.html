@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Ipad</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- External css-->
+   <link rel="stylesheet" href="style.css">
+</head>
+  <body class="bg-gray-100 p-4">
+<!-- header  -->
+    <h1 class="font-semibold  text-center text-base bg-[#1796A5] p-3 text-white">
+        SUMMER SALES IS BACK! GET UPTO 40% ! DISCOUNT ON HEADPHONES!
+    </h1>
+    <header class="px-4 py-3 flex-col md:flex-row  flex items-center justify-between shadow">
+
+        <!-- Logo -->
+        <div>
+            <a href="index.html"><img src="assest/image/logo.png" alt=""></a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6 text-xl font-semibold">
+            <a href="categories.html">CATEGORIES</a>
+            <a href="about_us.html">ABOUT US</a>
+        </nav>
+
+        <!-- Right Section -->
+        <div class="flex  items-center space-x-3">
+
+            <div class="sm:flex  items-center  rounded-full px-3 py-1  border-2 border-[#1796A5]">
+                <input type="text" placeholder="Search" class="outline-none bg-transparent px-2 w-24 md:w-40" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 
+                      7.5 7.5 0 0 1 0 15z" />
+                </svg>
+            </div>
+
+
+            <!-- Cart -->
+             <a href="mycart.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black cursor-pointer" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.5 6h13M10 21a1 1 0 1 1-2 0 
+          1 1 0 0 1 2 0zm10 0a1 1 0 1 1-2 0 
+          1 1 0 0 1 2 0z" />
+            </svg>
+            </a>
+            <!-- Human-->
+            <div class="text-xl"><img src="assest/image/user home.png" alt=""></div>
+
+            <!-- Hamburger -->
+            <button onclick="toggleMenu()" class="md:hidden text-2xl">
+                ☰
+            </button>
+        </div>
+
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden flex flex-col bg-gray-100 p-4 md:hidden">
+        <a href="#" class="py-2">CATEGORIES</a>
+        <a href="#" class="py-2">ABOUT US</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("hidden");
+        }
+    </script>
+
+
+
+<div class="w-full bg-[#1796A5] p-5 text-3xl">
+  <h1 class="text-white font-bold">Apple Ipad</h1>
+</div>
+
+
+  <div class="grid grid-cols-1 md:grid-cols-4 mt-10 gap-6">
+
+    <!-- FILTER -->
+    <div class="md:col-span-1 bg-white p-4 rounded-lg shadow">
+      <h2 class="text-xl font-bold mb-4">Filter</h2>
+
+      <div class="space-y-3">
+        <div class="flex justify-between border p-2 rounded"><img src="assest/image/apple icon.png" alt="">Apple <span>›</span></div>
+        <div class="flex justify-between border p-2 rounded"><img src="assest/image/google icon.png" alt="">Google <span>›</span></div>
+        <div class="flex justify-between border p-2 rounded"><img src="assest/image/oneplus icon.png" alt="">OnePlus <span>›</span></div>
+        <div class="flex justify-between border p-2 rounded"><img src="assest/image/samsung icon.png" alt="">Samsung <span>›</span></div>
+        <div class="flex justify-between border p-2 rounded"><img src="assest/image/xiaomi icon.png" alt="">Xiaomi <span>›</span></div>
+        <div class="flex justify-between border p-2 rounded"><img src="assest/image/sony icon.png" alt="">Sony <span>›</span></div>
+        <div class="flex justify-between border p-2 rounded"><img src="assest/image/others icon.png" alt="">Other <span>›</span></div>
+      </div>
+
+      <!-- Sort by Price -->
+  <div class="p-6  min-h-screen">
+  
+  <!-- Sort by Price -->
+  <h2 class="text-lg font-semibold text-gray-600 mb-3">
+    Sort by Price
+  </h2>
+
+  <div class="flex gap-3 mb-8">
+    <button class="flex items-center gap-2 border border-gray-600 rounded-md px-4 py-2 text-sm">
+      Low to High
+      <span>↓↑</span>
+    </button>
+
+    <button class="flex items-center gap-2 border border-gray-600 rounded-md px-4 py-2 text-sm">
+      High to Low
+      <span>↓↑</span>
+    </button>
+  </div>
+
+  <!-- Sort by Name -->
+  <h2 class="text-lg font-semibold text-gray-600 mb-3">
+    Sort by Name
+  </h2>
+
+  <div class="flex gap-3">
+    <button class="flex items-center gap-2 border border-gray-600 rounded-md px-4 py-2 text-sm">
+      A-Z
+      <span>↓↑</span>
+    </button>
+
+    <button class="flex items-center gap-2 border border-gray-600 rounded-md px-4 py-2 text-sm">
+      Z-A
+      <span>↓↑</span>
+    </button>
+  </div>
+
+</div>
+  </div>
+
+
+    <!-- PRODUCTS -->
+    <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="bg-white p-3 rounded shadow">
+        <img src="assest/image/apple ipad 1.png" class="w-full h-40 object-cover rounded mb-2">
+        <h3 class="font-semibold">Anker Soundcore H30I Headphones</h3>
+        <p class="text-sm text-gray-500">Anker</p>
+        <div>
+          <span class="text-gray-400 line-through mr-2">₹ 2000</span>
+          <span class="text-[#1796A5] font-bold">₹ 1800</span>
+        </div>
+      </div>
+
+      <div class="bg-white p-3 rounded shadow">
+        <img src="assest/image/apple ipad 2.png" class="w-full h-40 object-cover rounded mb-2">
+        <h3 class="font-semibold">Apple Airpods Max Type</h3>
+        <p class="text-sm text-gray-500">Apple</p>
+        <div>
+          <span class="text-gray-400 line-through mr-2">₹ 2000</span>
+          <span class="text-[#1796A5] font-bold">₹ 1800</span>
+        </div>
+      </div>
+
+      <div class="bg-white p-3 rounded shadow">
+        <img src="assest/image/apple ipad 3.png" class="w-full h-40 object-cover rounded mb-2">
+        <h3 class="font-semibold">JBL JR470NC Kids Wireless Headset</h3>
+        <p class="text-sm text-gray-500">JBL</p>
+        <div>
+          <span class="text-gray-400 line-through mr-2">₹ 2000</span>
+          <span class="text-[#1796A5] font-bold">₹ 1800</span>
+        </div>
+      </div>
+      <div class="bg-white p-3 rounded shadow">
+        <img src="assest/image/apple ipad 4.png" class="w-full h-40 object-cover rounded mb-2">
+        <h3 class="font-semibold">Marshall Monitor 2 ANC Headphones</h3>
+        <p class="text-sm text-gray-500">Marshall</p>
+        <div>
+          <span class="text-gray-400 line-through mr-2">₹ 2000</span>
+          <span class="text-[#1796A5] font-bold">₹ 1800</span>
+        </div>
+      </div>
+      <div class="bg-white p-3 rounded shadow">
+        <img src="assest/image/apple ipad 5.png" class="w-full h-40 object-cover rounded mb-2">
+        <h3 class="font-semibold">Xiaomi Air Style 4a Compact</h3>
+        <p class="text-sm text-gray-500">Xiaomi</p>
+        <div>
+          <span class="text-gray-400 line-through mr-2">₹ 2000</span>
+          <span class="text-[#1796A5] font-bold">₹ 1800</span>
+        </div>
+      </div>
+      <div class="bg-white p-3 rounded shadow">
+        <img src="assest/image/apple ipad 6.png" class="w-full h-40 object-cover rounded mb-2">
+        <h3 class="font-semibold">One Plus Headphones</h3>
+        <p class="text-sm text-gray-500">One Plus</p>
+        <div>
+          <span class="text-gray-400 line-through mr-2">₹ 2000</span>
+          <span class="text-[#1796A5] font-bold">₹ 1800</span>
+        </div>
+      </div>
+
+      <div class="bg-white p-3 rounded shadow">
+        <img src="assest/image/apple ipad 7.png" class="w-full h-40 object-cover rounded mb-2">
+        <h3 class="font-semibold">Powerology Mono Lightning</h3>
+        <p class="text-sm text-gray-500">Powerology</p>
+        <div>
+          <span class="text-gray-400 line-through mr-2">₹ 2000</span>
+          <span class="text-[#1796A5] font-bold">₹ 1800</span>
+        </div>
+      </div>
+      <div class="bg-white p-3 rounded shadow">
+        <img src="assest/image/apple ipad 8.png" class="w-full h-40 object-cover rounded mb-2">
+        <h3 class="font-semibold">Porodo Soundtech ANC Headsets</h3>
+        <p class="text-sm text-gray-500">Porodo</p>
+        <div>
+          <span class="text-gray-400 line-through mr-2">₹ 2000</span>
+          <span class="text-[#1796A5] font-bold">₹ 1800</span>
+        </div>
+      </div>
+      <div class="bg-white p-3 rounded shadow">
+        <img src="assest/image/apple ipad 9.png" class="w-full h-40 object-cover rounded mb-2">
+        <h3 class="font-semibold">Playstation pulse Headphones</h3>
+        <p class="text-sm text-gray-500">Sony</p>
+        <div>
+          <span class="text-gray-400 line-through mr-2">₹ 2000</span>
+          <span class="text-[#1796A5] font-bold">₹ 1800</span>
+        </div>
+      </div>
+
+      <div class="bg-white p-3 rounded shadow">
+        <img src="assest/image/apple ipad 10.png" class="w-full h-40 object-cover rounded mb-2">
+        <h3 class="font-semibold">Samsung Galaxy WH 1000 Headphones</h3>
+        <p class="text-sm text-gray-500">Samsung</p>
+        <div>
+          <span class="text-gray-400 line-through mr-2">₹ 2000</span>
+          <span class="text-[#1796A5] font-bold">₹ 1800</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+ <!--footer-->
+
+    <footer class=" bg-black mt-10 mt-col md:mt-10 text-white">
+        <div class="max-w-6xl  mx-auto grid grid-cols-1 md:grid-cols-3 md:mt-10 gap-4">
+
+            <div class="p-4">
+                <h2 class=" font-bold text-xl"> DISCOVER </h2>
+                <h1 class="  text-2xl mt-3"><a href="Delivery terms.html">Delivery Terms</a></h1>
+                <h1 class=" text-2xl mt-2"><a href="Contactus.html">Contact Us</a></h1>
+                <h1 class=" text-2xl mt-2 "><a href="Howtoplaceorder.html">How to Place Order</a></h1>
+                <h1 class="  text-2xl mt-2"><a href="Privacypolicy.html">Privacy Policy</a></h1>
+            </div>
+
+            <div class="p-4">
+                <h2 class=" font-bold text-xl"> CONTINUE SHOPPING </h2>
+                <h1 class="  text-2xl mt-3">Small Gadgets</h1>
+                <h1 class="  text-2xl mt-3">Gaming</h1>
+                <h1 class="  text-2xl mt-3">Smart Watch</h1>
+                <h1 class="  text-2xl mt-3">Headphones</h1>
+            </div>
+
+            <div class="p-4">
+                <h1 class=" font-bold text-xl">S.T.TECH</h1>
+                <p class="  text-2xl mt-3">No.5, South Fairlands,</p>
+                <p class="  text-2xl ">Yercaud Main Road, Sales</p>
+                <p class="  text-2xl ">Tamilnadu</p>
+                <p class="  text-2xl mt-3">+91 9000090101</p>
+                <p class="  text-2xl mt-3">+91 9210254879</p>
+                <p class="  text-2xl mt-3">info @srtech.com</p>
+
+            </div>
+
+        </div>
+        <hr class="text-white">
+        <div class="flex justify-center p-3">
+            <img src="assest/image/social icons footer.png" alt="">
+        </div>
+        <h1 class="text-center text-xl p-4">
+            S.T.TECH 2020. All Rights Reserved
+        </h1>
+    </footer>
+</body>
+</html>

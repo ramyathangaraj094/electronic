@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Website</title>
+
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- External css-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header  -->
+    <h1 class="font-semibold  text-center text-base bg-[#1796A5] p-3 text-white">
+        SUMMER SALES IS BACK! GET UPTO 40% ! DISCOUNT ON HEADPHONES!
+    </h1>
+    <header class="px-4 py-3 flex-col md:flex-row  flex items-center justify-between shadow">
+
+        <!-- Logo -->
+        <div>
+            <a href="index.html"><img src="assest/image/logo.png" alt=""></a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6 text-xl font-semibold">
+            <a href="categories.html">CATEGORIES</a>
+            <a href="about_us.html">ABOUT US</a>
+        </nav>
+
+        <!-- Right Section -->
+        <div class="flex  items-center space-x-3">
+
+            <div class="sm:flex  items-center  rounded-full px-3 py-1  border-2 border-[#1796A5]">
+                <input type="text" placeholder="Search" class="outline-none bg-transparent px-2 w-24 md:w-40" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 
+                      7.5 7.5 0 0 1 0 15z" />
+                </svg>
+            </div>
+
+
+            <!-- Cart -->
+             <a href="mycart.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black cursor-pointer" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.5 6h13M10 21a1 1 0 1 1-2 0 
+          1 1 0 0 1 2 0zm10 0a1 1 0 1 1-2 0 
+          1 1 0 0 1 2 0z" />
+            </svg>
+            </a>
+            <!-- Human-->
+            <div class="text-xl"><img src="assest/image/user home.png" alt=""></div>
+
+            <!-- Hamburger -->
+            <button onclick="toggleMenu()" class="md:hidden text-2xl">
+                ☰
+            </button>
+        </div>
+
+    </header>
+
+    <!-- Mobile Menu --> 
+    <div id="menu" class="hidden flex flex-col bg-gray-100 p-4 md:hidden">
+        <a href="#" class="py-2">CATEGORIES</a>
+        <a href="#" class="py-2">ABOUT US</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("hidden");
+        }
+    </script>
+
+
+    <!-- SECTION 1 -->
+   <div class="w-full h-screen bg-[url('/assest/image/header_image.png')] bg-cover bg-center flex items-center">
+    
+    <!-- Content -->
+    <div class="px-4 md:px-16 max-w-xl text-black">
+      
+      <h3 class="text-lg md:text-2xl font-semibold mb-2">
+        45% Discount
+      </h3>
+
+      <h2 class="text-[35px]  font-bold mb-3 leading-tight">
+        Boat RockerZ 510 Wireless Headphones
+      </h2>
+
+      <h3 class="text-xl  font-semibold mb-5">
+        From ₹ 750
+      </h3>
+
+      <button class="bg-white text-black px-5 py-2 rounded font-bold transition">
+        Shop Now
+      </button>
+
+    </div>
+
+  </div>
+
+    <!--SECTION 2-->
+    <div class="max-w-6xl mx-auto px-4 mt-10">
+        <div
+            class="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-4  gap-4 mr-15 border-2 border-[#1796A5] p-8 rounded-lg">
+
+            <!--box 1-->
+
+            <div class="flex justify-between gap-4">
+                <div>
+                    <img src="assest/image/free shipping.png" alt="img">
+                </div>
+                <div>
+                    <h4 class="font-semibold">Free Shipping </h4>
+                    <p> For all orders above 500 rupees</p>
+                </div>
+            </div>
+            <!--box 2-->
+            <div class="flex justify-between gap-2">
+                <div>
+                    <img src="assest/image/30 days return.png" alt="img">
+                </div>
+                <div>
+                    <h4 class="font-semibold ">30 Days Return </h4>
+                    <p> Seamless return for 30 days</p>
+                </div>
+            </div>
+
+            <!--box 3-->
+
+            <div class="flex  justify-between ">
+                <div>
+                   <img src="assest/image/secured payment.png"  alt="img">
+                </div>
+                <div>
+                    <h4 class="font-semibold  ">Secured Payment</h4>
+                    <p> Your data is secured</p>
+                </div>
+
+            </div>
+
+            <!--box 4-->
+
+            <div class="flex justify-between gap-2 px-2">
+                <div>
+                    <img src="assest/image/special gift.png" alt="img">
+                </div>
+                <div>
+                    <h4 class="font-semibold ">Special Gifts </h4>
+                    <p> Assured gifts for all Orders
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECTION 3-->
+
+    <div class="w-auto  flex justify-between mt-10 ">
+        <div class="w-3/4 ml-30 font-bold text-2xl">
+            <h2>latest Products </h2>
+        </div>
+        <div class="w-1/4 font-bold text-2xl flex gap-4 ">
+            <h2>View All</h2>
+            <h4><img src="assest/image/arrow icon.png" alt="arow"></h4>
+        </div>
+    </div>
+
+    <!--card head-->
+
+    <div class="max-w-6xl mx-auto mt-10 px-4">
+        <div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!--card 1-->
+            <div class="border border-gray-300  rounded-lg p-3 hover:shadow-lg">
+                <a href="Ajaaz Wireless Keyboard.html"> <img src="assest/image/latest home image 1.png" class="w-full h-50 object-cover rounded"
+                        alt="image">
+                    <h3 class="mt-3 font-semibold text-2xl">Play Station PS5 Disc <br> Drive</h3>
+                    <p class="font-semibold text-3">Sony</p>
+                    <div class="flex"><img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+
+
+
+                        <img src="assest/image/review star icon.png" alt="">
+                        </div>
+                        <div>
+          <span class="text-gray-400 line-through text-xl mt-3 mr-2">₹ 1500</span>
+          <span class="text-[#1796A5] text-xl font-bold">₹ 1299</span>
+        </div>
+                    
+                </a>
+            </div>
+
+            <!--card 2-->
+
+            <div class="border border-gray-300 rounded-lg p-3 hover:shadow-lg">
+                <a href="Amazon Alexa Echo Speaker.html"> <img src="assest/image/latest home image 2.png" class="w-full h-50 object-cover rounded"
+                        alt="image">
+                    <h3 class="mt-3 font-semibold text-2xl">DJI Mini 4 Pro Drone <br> fly</h3>
+                    <p class="font-semibold text-3">DJI</p>
+                    <div class="flex"><img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                    </div>
+                     <div>
+          <span class="text-gray-400 line-through text-xl mt-3 mr-2">₹ 8000</span>
+          <span class="text-[#1796A5] text-xl font-bold">₹ 7450</span>
+        </div>
+                </a>
+            </div>
+
+            <!--card 3-->
+
+            <div class="border border-gray-300 rounded-lg p-3 hover:shadow-lg">
+                <a href="Anker Soundcore K20i Earbuds.html"> <img src="assest/image/latest home image 3.png" class="w-full h-50 object-cover rounded"
+                        alt="image">
+                    <h3 class="mt-3 font-semibold text-2xl">One Plus Buds Pro <br> Lite 3</h3>
+                    <p class="font-semibold text-3">OnePlus</p>
+                    <div class="flex"><img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                    </div>
+                     <div>
+          <span class="text-gray-400 line-through text-xl mt-3 mr-2">₹ 750</span>
+          <span class="text-[#1796A5] text-xl font-bold">₹ 685</span>
+        </div>
+                </a>
+            </div>
+
+            <!--card 4-->
+
+            <div class="border border-gray-300 rounded-lg p-3 hover:shadow-lg">
+                <a href="JBL JR470nc Wireless Headset.html"> <img src="assest/image/latest home image 4.png" class="w-full h-50 object-cover rounded"
+                        alt="image">
+                    <h3 class="mt-3 font-semibold text-2xl">Xiaomi Mi Mop X20+ <br> Vacuum Cleaner</h3>
+                    <p class="font-semibold text-3">Xiaomi</p>
+                    <div class="flex"><img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                    </div>
+                     <div>
+          <span class="text-gray-400 line-through text-xl mt-3 mr-2">₹ 12000</span>
+          <span class="text-[#1796A5] text-xl font-bold">₹ 10099</span>
+        </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--section 4-->
+<div class="w-full p-4">
+    <div class="max-w-6xl mx-auto mt-10 px-4">
+        <div class=" grid grid-cols-1  md:grid-cols-2  gap-10">
+            <!--card 1-->
+            <div class="w-140 border border-gray-300 rounded-lg p-3 bg-[url('/assest/image/poster_home_1.png')] hover:shadow-lg  font-bold h-60 text-white">
+                <a href="Tablets.html">
+                    <h3 class="font-bold text-2xl">Latest Xiaomi Mobiles</h3>
+                    <h3 class="font-bold text-2xl">exclusive at our Website</h3>
+                    <h3 class="font-bold text-2xl">From &#8377; 18,000</h3>
+                    <div class="flex gap-2">
+                    <h3 class="font-bold text-2xl">shop Now</h3>
+                    <img src="assest/image/right arrow home.png" alt="">
+                </div>
+                </a>
+            </div>
+
+            <!--card2-->
+            <div class="w-140 border  border-gray-300 rounded-lg p-3 bg-[url('/assest/image/poster_home_2.png')] hover:shadow-lg font-bold h-60 text-white">
+                <a href="Apple Ipad.html">
+                    <h3 class="font-bold text-2xl">MacBook Pro</h3>
+                    <h3 class="font-bold text-2xl">with Smart Phone</h3>
+                    <h3 class="font-bold text-2xl mt-3">From &#8377; 40,000</h3>
+                    <div class="flex gap-2">
+                    <h3 class="font-bold text-2xl">shop Now </h3>
+                    <img src="assest/image/right arrow home.png" alt="">
+                </div>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <!--section 5-->
+
+    <div class="w-auto  flex justify-between mt-10 ">
+        <div class="w-3/4 ml-30 font-bold text-2xl">
+            <h2>Best Sellers</h2>
+        </div>
+        <div class="w-1/4 font-bold text-2xl flex gap-4 ">
+            <h2>View All</h2>
+            <h4><img src="assest/image/arrow icon.png" alt="arow"></h4>
+        </div>
+    </div>
+
+    <!--card head-->
+
+    <div class="max-w-6xl mx-auto mt-10 px-4">
+        <div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!--card 1-->
+            <div class="border border-gray-300  rounded-lg p-3 hover:shadow-lg">
+                <a href="Iphone 16 Pro.html"> <img src="assest/image/best sellers home 1.png" class="w-full h-50 object-cover rounded"
+                        alt="image">
+                    <h3 class="mt-3 font-semibold text-2xl">Xiaomi Air Purifier 4 <br> Compact</h3>
+                    <p class="font-semibold text-3">Xiaomi</p>
+                    <div class="flex"><img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                    </div>
+                     <div>
+          <span class="text-gray-400 line-through text-xl mt-3 mr-2">₹ 2000</span>
+          <span class="text-[#1796A5] text-xl font-bold">₹ 1800</span>
+        </div>
+                </a>
+            </div>
+
+            <!--card 2-->
+
+            <div class="border border-gray-300 rounded-lg p-3 hover:shadow-lg">
+                <a href="Amazon Alexa Echo Speaker.html"> <img src="assest/image/best sellers home 2.png" class="w-full h-50 object-cover rounded"
+                        alt="image">
+                    <h3 class="mt-3 font-semibold text-2xl">Ark Built - in<br> Lightning Connector</h3>
+                    <p class="font-semibold text-3">ARK</p>
+                    <div class="flex"><img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                    </div>
+                     <div>
+          <span class="text-gray-400 line-through text-xl mt-3 mr-2">₹ 8000</span>
+          <span class="text-[#1796A5] text-xl font-bold">₹ 7450</span>
+        </div>
+                </a>
+            </div>
+
+            <!--card 3-->
+
+            <div class="border border-gray-300 rounded-lg p-3 hover:shadow-lg">
+                <a href="Amazon Fire HD KIds Pro Tablet.html"> <img src="assest/image/best sellers home 3.png" class="w-full h-50 object-cover rounded"
+                        alt="image">
+                    <h3 class="mt-3 font-semibold text-2xl">JBL Party Box 110<br> -Small</h3>
+                    <p class="font-semibold text-3">JBL</p>
+                    <div class="flex"><img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                    </div>
+                     <div>
+          <span class="text-gray-400 line-through text-xl mt-3 mr-2">₹ 750</span>
+          <span class="text-[#1796A5] text-xl font-bold">₹ 685</span>
+        </div>
+                </a>
+            </div>
+
+            <!--card 4-->
+
+            <div class="border border-gray-300 rounded-lg p-3 hover:shadow-lg">
+                <a href="Amazon Fire HD KIds Pro Tablet.html"> <img src="assest/image/best sellers home 4.png" class="w-full h-50 object-cover rounded"
+                        alt="image">
+                    <h3 class="mt-3 font-semibold text-2xl">Samsung Wireless <br> Mouse</h3>
+                    <p class="font-semibold text-3">Samsung</p>
+                    <div class="flex"><img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                        <img src="assest/image/review star icon.png" alt="">
+                    </div>
+                     <div>
+          <span class="text-gray-400 line-through text-xl mt-3 mr-2">₹ 12000</span>
+          <span class="text-[#1796A5] text-xl font-bold">₹ 10099</span>
+        </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!--SECTION6-->
+
+    <div class="w-auto  mt-10 ">
+        <div class="w-3/4 ml-30 font-bold text-2xl">
+            <h2>Deal of the Day!</h2>
+        </div>
+
+        <div class="max-w-6xl mx-auto mt-10 px-4">
+            <div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!--card 1-->
+              <a href="mycart.html">  <div class="flex justify-between gap-4 border border-gray-300 h-40 rounded-lg p-3 hover:shadow-lg">
+                    <img src="assest/image/deal of the day 1.png" class="w-30" alt="">
+                    <h3 class="font-bold text-lg">Instax Mini 12 Camera <br>Fujifilm <br>&#8377; 4,450 <br><button
+                            class="bg-blue-400 px-2 rounded-lg m-2 text-base text-white">ADD TO CART</button>
+                    </h3>
+                </div></a>
+
+                <!--card2-->
+
+                <a href="mycart.html"><div class="flex justify-between gap-2 border border-gray-300 h-40 rounded-lg p-3 hover:shadow-lg">
+                    <img src="assest/image/deal of the day 2.png" class="w-30" alt="">
+                    <h3 class="font-bold text-lg">Portable rojector <br>Anker <br>&#8377; 5,400 <br><button
+                            class="bg-blue-400 px-2 rounded-lg m-2 text-base text-white">ADD TO CART</button>
+                    </h3>
+                </div></a>
+                <!--card 3-->
+              <a href="mycart.html"> <div class="flex justify-between gap-4 border border-gray-300 h-40 rounded-lg p-3 hover:shadow-lg">
+                    <img src="assest/image/deal of the day 3.png" class="w-30" alt="">
+                    <h3 class="font-bold text-lg">Mgsafe Powerbank <br>Green Lion <br>&#8377; 1,200 <br><button
+                            class="bg-blue-400 px-2 rounded-lg m-1 text-base text-white">ADD TO CART</button>
+                    </h3>
+                </div></a>
+            </div>
+        </div>
+
+
+    </div>
+    <!--section 7-->
+    <div class="w-full  bg-blue-200 mt-10 ">
+        <div class="w-3/4 ml-30 font-bold mt-10 text-2xl">
+            <h2 class="mt-10">Shop By Category</h2>
+        </div>
+
+        <div class="max-w-6xl mx-auto   px-4">
+            <div class=" grid grid-cols-1 mt-5 md:grid-cols-1 lg:grid-cols-7 gap-3">
+                <!--card 1-->
+                <div class=" rounded-lg p-3 hover:shadow-lg">
+                  <a href="headphone.html"> <img src="assest/image/shop home 1.png" class="w-40 " alt="">
+                    <h3 class="text-center font-bold text-lg mt-3">Apple Ipad</h3>
+                    <h4 class="text-center font-semibold">12 Products</h4></a>
+
+                </div>
+                <!--card2-->
+                <div class="   rounded-lg p-3 hover:shadow-lg">
+                   <a href="Earbuds.html">  <img src="assest/image/shop home 2.png" class="w-30" alt="">
+                    <h3 class="text-center font-bold text-lg mt-3">Earbuds</h3>
+                    <h4 class="text-center font-semibold">20 Products</h4></a>
+
+                </div>
+                <!--section 3-->
+                <div class="  rounded-lg p-3 hover:shadow-lg">
+                    <a href="Smartwatch.html"> <img src="assest/image/shop home 3.png" class="w-30" alt="">
+                    <h3 class="text-center font-bold text-lg mt-3">Smart Watch</h3>
+                    <h4 class="text-center font-semibold">13 Products</h4></a>
+
+                </div>
+                <!--section 4-->
+                <div class="  rounded-lg p-3 hover:shadow-lg">
+                    <a href="Speaker.html"><img src="assest/image/shop home 4.png" class="w-30" alt="">
+                    <h3 class="text-center font-bold text-lg mt-3">Speaker</h3>
+                    <h4 class="text-center font-semibold">27 Products</h4></a>
+
+                </div>
+                <!--section 5-->
+                <div class="  rounded-lg p-3 hover:shadow-lg">
+                  <a href="Accessories.html"><img src="assest/image/shop home 5.png" class="w-30" alt="">
+                    <h3 class="text-center font-bold text-lg mt-3">Gaming</h3>
+                    <h4 class="text-center font-semibold">14 Products</h4></a>
+
+                </div>
+                <!--section 6-->
+                <div class="   rounded-lg p-3 hover:shadow-lg">
+                  <a href="JBL JR470nc Wireless Headset.html"> <img src="assest/image/shop home 6.png" class="w-30" alt="">
+                    <h3 class="text-center font-bold text-lg mt-3">Headphones</h3>
+                    <h4 class="text-center font-semibold">32 Products</h4></a>
+
+                </div>
+                <!--section 7-->
+                <div class="   rounded-lg p-3 hover:shadow-lg">
+                     <a href="Accessories.html"><img src="assest/image/shop home 7.png" class="w-30" alt="">
+                    <h3 class="text-center font-bold text-lg mt-3">Mouse</h3>
+                        <h4 class="text-center font-semibold">20 Products</h4></a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--section 8-->
+<section class=" mt-10 p-4 md:p-8">
+<div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+
+  <!-- CARD 1 -->
+  <a href="Earbuds.html"><div class="relative rounded-xl overflow-hidden">
+    
+    <img src="assest/image/ear buds poster home.png" 
+         class="w-full h-[250px] sm:h-[300px] object-cover">
+
+    <!-- Overlay Content -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+      
+      <h2 class="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-4">
+        Buy Airpods Max Bluetooth
+      </h2>
+
+      <button class="bg-white px-4 mt-35 sm:px-6 py-2 rounded-full flex items-center gap-2">
+        Shop Now
+        <span class="bg-black text-white w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center rounded-full text-xs">→</span>
+      </button>
+
+    </div>
+  </div></a>
+
+  <!-- CARD 2 -->
+  <a href="Power Bank.html"><div class="relative rounded-xl overflow-hidden">
+    
+    <img src="assest/image/mouse poster home.png" 
+         class="w-full h-[250px] sm:h-[300px] object-cover">
+
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+      
+      <h2 class="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-4">
+        Get Wireless Matte Mouse
+      </h2>
+
+      <button class="bg-white mt-35 px-4 sm:px-6 py-2 rounded-full flex items-center gap-2">
+        Shop Now
+        <span class="bg-black text-white w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center rounded-full text-xs">→</span>
+      </button>
+
+    </div>
+  </div></a>
+
+  <!-- CARD 3 -->
+ <a href="Smartwatch.html"> <div class="relative rounded-xl overflow-hidden">
+    
+    <img src="assest/image/smart watch poster home.png" 
+         class="w-full h-[250px] sm:h-[300px] object-cover">
+
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+      
+      <h2 class="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-4">
+        Buy Huami Smart Watch
+      </h2>
+
+      <button class="bg-white mt-35  px-4 sm:px-6 py-2 rounded-full flex items-center gap-2">
+        Shop Now
+        <span class="bg-black text-white w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center rounded-full text-xs">→</span>
+      </button>
+
+    </div>
+  </div></a>
+
+</div>
+</section>
+
+    <!--footer-->
+
+    <footer class=" bg-black mt-10 mt-col md:mt-10 text-white">
+        <div class="max-w-6xl  mx-auto grid grid-cols-1 md:grid-cols-3 md:mt-10 gap-4">
+
+            <div class="p-4">
+                <h2 class=" font-bold text-xl"> DISCOVER </h2>
+                <h1 class="  text-2xl mt-3"><a href="Delivery terms.html">Delivery Terms</a></h1>
+                <h1 class=" text-2xl mt-2"><a href="Contactus.html">Contact Us</a></h1>
+                <h1 class=" text-2xl mt-2 "><a href="Howtoplaceorder.html">How to Place Order</a></h1>
+                <h1 class="  text-2xl mt-2"><a href="Privacypolicy.html">Privacy Policy</a></h1>
+            </div>
+
+            <div class="p-4">
+                <h2 class=" font-bold text-xl"> CONTINUE SHOPPING </h2>
+                <h1 class="  text-2xl mt-3">Small Gadgets</h1>
+                <h1 class="  text-2xl mt-3">Gaming</h1>
+                <h1 class="  text-2xl mt-3">Smart Watch</h1>
+                <h1 class="  text-2xl mt-3">Headphones</h1>
+            </div>
+
+            <div class="p-4">
+                <h1 class=" font-bold text-xl">S.T.TECH</h1>
+                <p class="  text-2xl mt-3">No.5, South Fairlands,</p>
+                <p class="  text-2xl ">Yercaud Main Road, Sales</p>
+                <p class="  text-2xl ">Tamilnadu</p>
+                <p class="  text-2xl mt-3">+91 9000090101</p>
+                <p class="  text-2xl mt-3">+91 9210254879</p>
+                <p class="  text-2xl mt-3">info @srtech.com</p>
+
+            </div>
+
+        </div>
+        <hr class="text-white">
+        <div class="flex justify-center p-3">
+            <img src="assest/image/social icons footer.png" alt="">
+        </div>
+        <h1 class="text-center text-xl p-4">
+            S.T.TECH 2020. All Rights Reserved
+        </h1>
+    </footer>
+
+</body>
+
+</html>
